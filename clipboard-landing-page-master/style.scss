@@ -1,0 +1,214 @@
+ * {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+}
+html {
+  font-size: 18px;
+}
+$colors: (
+  DarkGrayishBlue: hsl(210, 10%, 33%),
+  GrayishBlue: hsl(201, 11%, 66%),
+  StrongCyan: hsl(171, 66%, 44%),
+  LightBlue: hsl(233, 100%, 69%),
+);
+@function clr($color-name) {
+  @return map-get($colors, $color-name);
+}
+@mixin mobile {
+  @media (max-width: 800px) {
+    @content;
+  }
+}
+h2, h1, h3 {
+  color: #{clr(DarkGrayishBlue)};
+}
+p {
+  font-size: 18px;
+  color: #{clr(GrayishBlue)};
+  line-height: 1.5;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 600px;
+  @include mobile {
+    font-size: 16px;
+  }
+}
+h1 {
+  @include mobile {
+    font-size: 28px;
+    max-width: 270px;
+  }
+  font-size: 31px;
+  margin: 5px auto;
+}
+
+h2 {
+  @include mobile {
+    font-size: 23px;
+    max-width: 270px;
+    margin: 5px auto;
+  }
+  font-size: 26px;
+}
+h3 {
+  @include mobile {
+    font-size: 19px;
+  }
+  font-size: 22px;
+}
+.container{
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* buttons */
+.mac-btn {
+  padding: .7em 2em;
+  background: #{clr(LightBlue)};
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #fff;
+  box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.2);
+  margin: 10px auto;
+  @include mobile {
+    padding: .7em 1.2em;
+  }
+}
+.ios-btn {
+  padding: .7em 2em;
+  background: #{clr(StrongCyan)};
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #fff;
+  box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.2);
+  @include mobile {
+    padding: .7em 1.2em;
+  }
+}
+.history {
+  padding: 50px 0;
+  background: url('images/bg-header-desktop.png') no-repeat top;
+  background-size: cover;
+  @include mobile {
+    background: url('images/bg-header-mobile.png') no-repeat top;
+  }
+  .container {
+    text-align: center;
+    img {
+      height: 100px;
+      margin: 20px auto;
+      @include mobile {
+        height: 80px;
+      }
+    }
+  }
+}
+.keep {
+  padding: 40px 0;
+  text-align: center;
+}
+.services {
+  padding: 20px 0;
+  .container {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+    }
+    .text{
+      width: 50%;
+      max-width: 320px;
+      padding: 20px;
+      p{
+        margin-bottom:30px;
+      }
+      @include mobile{
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .image {
+      width: 50%;
+      height: 500px;
+      @include mobile{
+        width: 100%;
+        max-width: 360px;
+        height: 300px;
+        margin: 0 auto;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+      
+    }
+  }
+}
+.anywhere{
+  text-align: center;
+ padding: 20px 0;
+ p{
+   margin-bottom:40px;
+ }
+  img{
+      width: 50%;
+      height: 500px;
+      @include mobile{
+        width: 100%;
+        max-width: 360px;
+        height: 300px;
+        margin: 0 auto;
+      }
+}
+}
+.super{
+  text-align: center;
+  .container{
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mobile{
+      flex-direction: column;
+    }
+  }
+  .card{
+    img{
+      margin: 10px auto;
+    }
+    padding: 10px;
+  }
+}
+.companys{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  @include mobile{
+    flex-direction: column;
+  }
+  img{
+    height: 100px;
+    width: 200px;
+    margin:20px;
+    object-fit: contain;
+    @include mobile{
+      width:100px;
+      height: 50px;
+    }
+  }
+}
+.deviced{
+  padding: 40px 0;
+  text-align: center;
+}
+ola

@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+h2, h1, h3 {
+  color: #4c545d;
+}
+
+p {
+  font-size: 18px;
+  color: #9fabb2;
+  line-height: 1.5;
+  margin: 10px auto;
+  width: 90%;
+  max-width: 600px;
+}
+
+@media (max-width: 800px) {
+  p {
+    font-size: 16px;
+  }
+}
+
+h1 {
+  font-size: 31px;
+  margin: 5px auto;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 28px;
+    max-width: 270px;
+  }
+}
+
+h2 {
+  font-size: 26px;
+}
+
+@media (max-width: 800px) {
+  h2 {
+    font-size: 23px;
+    max-width: 270px;
+    margin: 5px auto;
+  }
+}
+
+h3 {
+  font-size: 22px;
+}
+
+@media (max-width: 800px) {
+  h3 {
+    font-size: 19px;
+  }
+}
+
+.container {
+  width: 90%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* buttons */
+.mac-btn {
+  padding: .7em 2em;
+  background: #6173ff;
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #fff;
+  box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.2);
+  margin: 10px auto;
+}
+
+@media (max-width: 800px) {
+  .mac-btn {
+    padding: .7em 1.2em;
+  }
+}
+
+.ios-btn {
+  padding: .7em 2em;
+  background: #26baa4;
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+  color: #fff;
+  box-shadow: 1px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 800px) {
+  .ios-btn {
+    padding: .7em 1.2em;
+  }
+}
+
+.history {
+  padding: 50px 0;
+  background: url("images/bg-header-desktop.png") no-repeat top;
+  background-size: cover;
+}
+
+@media (max-width: 800px) {
+  .history {
+    background: url("images/bg-header-mobile.png") no-repeat top;
+  }
+}
+
+.history .container {
+  text-align: center;
+}
+
+.history .container img {
+  height: 100px;
+  margin: 20px auto;
+}
+
+@media (max-width: 800px) {
+  .history .container img {
+    height: 80px;
+  }
+}
+
+.keep {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.services {
+  padding: 20px 0;
+}
+
+.services .container {
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .services .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.services .container .text {
+  width: 50%;
+  max-width: 320px;
+  padding: 20px;
+}
+
+.services .container .text p {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 800px) {
+  .services .container .text {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.services .container .image {
+  width: 50%;
+  height: 500px;
+}
+
+@media (max-width: 800px) {
+  .services .container .image {
+    width: 100%;
+    max-width: 360px;
+    height: 300px;
+    margin: 0 auto;
+  }
+}
+
+.services .container .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.anywhere {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.anywhere p {
+  margin-bottom: 40px;
+}
+
+.anywhere img {
+  width: 50%;
+  height: 500px;
+}
+
+@media (max-width: 800px) {
+  .anywhere img {
+    width: 100%;
+    max-width: 360px;
+    height: 300px;
+    margin: 0 auto;
+  }
+}
+
+.super {
+  text-align: center;
+}
+
+.super .container {
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .super .container {
+    flex-direction: column;
+  }
+}
+
+.super .card {
+  padding: 10px;
+}
+
+.super .card img {
+  margin: 10px auto;
+}
+
+.companys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+@media (max-width: 800px) {
+  .companys {
+    flex-direction: column;
+  }
+}
+
+.companys img {
+  height: 100px;
+  width: 200px;
+  margin: 20px;
+  object-fit: contain;
+}
+
+@media (max-width: 800px) {
+  .companys img {
+    width: 100px;
+    height: 50px;
+  }
+}
+
+.deviced {
+  padding: 40px 0;
+  text-align: center;
+}
