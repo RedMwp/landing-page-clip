@@ -4,6 +4,11 @@
   text-decoration: none;
   outline: none;
   box-sizing: border-box;
+  font-family: 'ba','sans'
+}
+@font-face {
+  font-family: 'ba';
+  src: url('fonts/BaiJamjuree-Regular.ttf');
 }
 
 html {
